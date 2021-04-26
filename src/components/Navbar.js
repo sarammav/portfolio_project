@@ -1,11 +1,12 @@
 import React from 'react'
 import logo from '../logo.png';
+import {Link} from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     return (
-<nav className="navbar navbar-expand-lg navbar-light bg-dark">
+<nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
 <div className="container" >
 
 
@@ -18,22 +19,22 @@ const Navbar = () => {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <Link smooth={true} to= "home" className="nav-link" href="#">Home <span class="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">About Me</a>
+        <Link smooth={true} to= "aboutme" offset={-110}className="nav-link" href="#">About Me</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Vlogs</a>
+        <Link smooth={true} to= "videos" offset={-110} className="nav-link" href="#">Videos</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Photo Gallary</a>
+        <Link smooth={true} to= "photogallery" className="nav-link" href="#">Photo Gallery</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Go Green Initiative </a>
+        <Link smooth={true} to= "gogreen" className="nav-link" href="#">Go Green Initiative </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Contacts</a>
+        <Link smooth={true} to= "contacts" className="nav-link" href="#">Contacts</Link>
       </li>
 
     </ul>

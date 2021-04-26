@@ -2,6 +2,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
+import Videos from './components/Videos';
+
 import Particles from 'react-particles-js';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
@@ -33,6 +35,8 @@ function App() {
     <Navbar />
     <Header />
     <AboutMe/>
+    <Videos/>
+
     </>
   );
 }
